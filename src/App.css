@@ -1,0 +1,161 @@
+/* General Styles */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff; /* Updated background */
+  color: #333;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 36px;
+  color: rgb(46, 162, 65);
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.btn svg {
+  margin-right: 5px;
+}
+
+/* Profile */
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.profile-pic-container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.profile-pic-input {
+  display: none; /* Hide the file input */
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+
+/* Flashcard Container */
+.flashcard-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.flashcard-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.flashcard-card:hover {
+  transform: translateY(-5px);
+}
+
+.flashcard-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+/* Search Bar and Filters */
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-input, .category-input, .category-select {
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.search-input {
+  width: 250px;
+}
+
+.category-select {
+  width: 200px;
+}
+
+.category-input {
+  width: 200px;
+}
+
+/* Header Styling */
+header {
+  margin-bottom: 30px;
+}
+
+header input[type="text"] {
+  width: 250px;
+}
+
+/* Quiz Mode Styling */
+.quiz-container {
+  margin-top: 30px;
+}
+
+.quiz-container .flashcard {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.quiz-container button {
+  background-color: #008CBA;
+}
+
+.quiz-container button:hover {
+  background-color: #005f7f;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .flashcard-container {
+    flex-direction: column;
+  }
+
+  .flashcard-card {
+    width: 100%;
+  }
+
+  .search-input, .category-input, .category-select {
+    width: 100%;
+  }
+}
